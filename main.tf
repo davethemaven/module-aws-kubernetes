@@ -11,7 +11,7 @@ resource "aws_iam_role" "ms-cluster" {
 
   assume_role_policy = <<POLICY
 {
-	"Version": "20240531",
+	"Version": "2012-10-17",
 	"Statement": [
 		{
 			"Effect": "Allow",
@@ -66,7 +66,7 @@ resource "aws_iam_role" "ms-node" {
 
   assume_role_policy = <<POLICY
 {
-	"Version": "20240531",
+	"Version": "2012-10-17",
 	"Statement": [
 		{
 			"Effect": "Allow",
