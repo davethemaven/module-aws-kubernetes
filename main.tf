@@ -142,7 +142,7 @@ users:
 	- name:	${aws_eks_cluster.ms-up-running.arn}
 	user:
 		exec:
-			apiversion:	client.authentication.k8s.io/v1alpha1
+			apiVersion:	client.authentication.k8s.io/v1beta1
 			command:	aws-iam-authenticator
 			args:
 				- "token"
